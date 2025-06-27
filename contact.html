@@ -1,1 +1,50 @@
-<!-- Contact page placeholder -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Far Out Campers</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Far Out Campers</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="vans.html">Our Vans</a></li>
+        <li><a href="booking.html">Book Now</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html">Terms</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Contact Us</h2>
+      <p>Have a question? Want to chat about your trip before you book? Drop us a message — we’d love to help.</p>
+
+      <form action="https://formspree.io/f/yourformid" method="POST">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="6" required></textarea><br><br>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <p>Or email us directly at <a href="mailto:info@faroutcampers.co.uk">info@faroutcampers.co.uk</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Far Out Campers. All rights reserved.</p>
+  </footer>
+</body>
+</html>
