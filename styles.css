@@ -46,6 +46,75 @@ nav ul li a:hover {
   color: #ffddd2;
 }
 
+/* Hamburger nav styles */
+.nav {
+  position: relative;
+  background: linear-gradient(90deg, #006d77, #83c5be);
+  padding: 10px 20px;
+}
+
+.nav .nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav .nav-links li {
+  margin: 0 15px;
+}
+
+.nav .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.nav .nav-links li a:hover {
+  color: #ffddd2;
+}
+
+.nav-icon {
+  display: none;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+/* Responsive rules */
+@media (max-width: 768px) {
+  .nav .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #006d77;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .nav .nav-links li {
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .nav-toggle:checked + .nav-icon + .nav-links {
+    display: flex;
+  }
+
+  .nav-icon {
+    display: block;
+    text-align: right;
+  }
+}
 main {
   max-width: 1000px;
   margin: 40px auto;
